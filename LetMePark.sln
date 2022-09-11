@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EFC714B4-C64
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetMePark.Api", "src\LetMePark.Api\LetMePark.Api.csproj", "{31CD84DC-B0AD-4CD6-BBB6-E465EB2C8D78}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{49EE502C-B0AD-412F-AB0B-0308A9841F89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetMePark.Tests.Unit", "tests\LetMePark.Tests.Unit\LetMePark.Tests.Unit.csproj", "{20B85011-6D4B-4BF9-B4C2-B301FA775EE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,8 +24,13 @@ Global
 		{31CD84DC-B0AD-4CD6-BBB6-E465EB2C8D78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31CD84DC-B0AD-4CD6-BBB6-E465EB2C8D78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31CD84DC-B0AD-4CD6-BBB6-E465EB2C8D78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20B85011-6D4B-4BF9-B4C2-B301FA775EE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20B85011-6D4B-4BF9-B4C2-B301FA775EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20B85011-6D4B-4BF9-B4C2-B301FA775EE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20B85011-6D4B-4BF9-B4C2-B301FA775EE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{31CD84DC-B0AD-4CD6-BBB6-E465EB2C8D78} = {EFC714B4-C640-4A99-9ECF-458BA4984F82}
+		{20B85011-6D4B-4BF9-B4C2-B301FA775EE5} = {49EE502C-B0AD-412F-AB0B-0308A9841F89}
 	EndGlobalSection
 EndGlobal
