@@ -14,7 +14,6 @@ C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\obj\Debug\net6.0\LetMePark.
 C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\obj\Debug\net6.0\LetMePark.Api.AssemblyInfoInputs.cache
 C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\obj\Debug\net6.0\LetMePark.Api.AssemblyInfo.cs
 C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\obj\Debug\net6.0\LetMePark.Api.csproj.CoreCompileInputs.cache
-C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\obj\Debug\net6.0\LetMePark.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\obj\Debug\net6.0\LetMePark.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\obj\Debug\net6.0\staticwebassets.development.json
@@ -25,3 +24,18 @@ C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\obj\Debug\net6.0\refint\Let
 C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\obj\Debug\net6.0\LetMePark.Api.pdb
 C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\obj\Debug\net6.0\LetMePark.Api.genruntimeconfig.cache
 C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\obj\Debug\net6.0\ref\LetMePark.Api.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\LetMePark.Core.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\LetMePark.Core.pdb
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\LetMePark.Application.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\LetMePark.Infrastructure.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\LetMePark.Infrastructure.pdb
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\LetMePark.Application.pdb
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\obj\Debug\net6.0\LetMePark.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Npgsql.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Humanizer.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll

@@ -1,23 +1,26 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EFC714B4-C640-4A99-9ECF-458BA4984F82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetMePark.Api", "src\LetMePark.Api\LetMePark.Api.csproj", "{31CD84DC-B0AD-4CD6-BBB6-E465EB2C8D78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LetMePark.Api", "src\LetMePark.Api\LetMePark.Api.csproj", "{31CD84DC-B0AD-4CD6-BBB6-E465EB2C8D78}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{49EE502C-B0AD-412F-AB0B-0308A9841F89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetMePark.Tests.Unit", "tests\LetMePark.Tests.Unit\LetMePark.Tests.Unit.csproj", "{20B85011-6D4B-4BF9-B4C2-B301FA775EE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LetMePark.Tests.Unit", "tests\LetMePark.Tests.Unit\LetMePark.Tests.Unit.csproj", "{20B85011-6D4B-4BF9-B4C2-B301FA775EE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetMePark.Core", "LetMePark.Core\LetMePark.Core.csproj", "{9F282EDB-DB53-436C-89B3-3847311BAD74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetMePark.Application", "LetMePark.Application\LetMePark.Application.csproj", "{C79A69F1-E455-4F7A-874C-EB5DD83AC0DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetMePark.Infrastructure", "LetMePark.Infrastructure\LetMePark.Infrastructure.csproj", "{3A29E44F-28BD-45A5-AD18-38C3625FAABF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{31CD84DC-B0AD-4CD6-BBB6-E465EB2C8D78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -28,9 +31,30 @@ Global
 		{20B85011-6D4B-4BF9-B4C2-B301FA775EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20B85011-6D4B-4BF9-B4C2-B301FA775EE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20B85011-6D4B-4BF9-B4C2-B301FA775EE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F282EDB-DB53-436C-89B3-3847311BAD74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F282EDB-DB53-436C-89B3-3847311BAD74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F282EDB-DB53-436C-89B3-3847311BAD74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F282EDB-DB53-436C-89B3-3847311BAD74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C79A69F1-E455-4F7A-874C-EB5DD83AC0DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C79A69F1-E455-4F7A-874C-EB5DD83AC0DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C79A69F1-E455-4F7A-874C-EB5DD83AC0DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C79A69F1-E455-4F7A-874C-EB5DD83AC0DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A29E44F-28BD-45A5-AD18-38C3625FAABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A29E44F-28BD-45A5-AD18-38C3625FAABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A29E44F-28BD-45A5-AD18-38C3625FAABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A29E44F-28BD-45A5-AD18-38C3625FAABF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{31CD84DC-B0AD-4CD6-BBB6-E465EB2C8D78} = {EFC714B4-C640-4A99-9ECF-458BA4984F82}
 		{20B85011-6D4B-4BF9-B4C2-B301FA775EE5} = {49EE502C-B0AD-412F-AB0B-0308A9841F89}
+		{9F282EDB-DB53-436C-89B3-3847311BAD74} = {EFC714B4-C640-4A99-9ECF-458BA4984F82}
+		{C79A69F1-E455-4F7A-874C-EB5DD83AC0DA} = {EFC714B4-C640-4A99-9ECF-458BA4984F82}
+		{3A29E44F-28BD-45A5-AD18-38C3625FAABF} = {EFC714B4-C640-4A99-9ECF-458BA4984F82}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9185741A-1122-42B4-BAFB-4C109CEFB1BA}
 	EndGlobalSection
 EndGlobal

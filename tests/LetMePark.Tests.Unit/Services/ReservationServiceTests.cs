@@ -1,8 +1,7 @@
 ﻿using LetMePark.Api.Commands;
-using LetMePark.Api.Entities;
-using LetMePark.Api.Repository;
 using LetMePark.Api.Services;
-using LetMePark.Api.ValueObjects;
+using LetMePark.Core.Repository;
+using LetMePark.Infrastructure.DAL.Repository;
 using LetMePark.Tests.Unit.Shared;
 using Shouldly;
 using Xunit;

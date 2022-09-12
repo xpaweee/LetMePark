@@ -1,7 +1,6 @@
-﻿using LetMePark.Api.Entities;
-using LetMePark.Api.Exceptions;
-using LetMePark.Api.Services;
-using LetMePark.Api.ValueObjects;
+﻿using LetMePark.Core.Entities;
+using LetMePark.Core.Exceptions;
+using LetMePark.Core.ValueObjects;
 using Shouldly;
 using Xunit;
 

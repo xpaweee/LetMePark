@@ -1,7 +1,6 @@
 ﻿using LetMePark.Api.Commands;
-using LetMePark.Api.Entities;
 using LetMePark.Api.Services;
-using LetMePark.Api.ValueObjects;
+using LetMePark.Core.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LetMePark.Api.Controllers;
@@ -10,9 +9,9 @@ namespace LetMePark.Api.Controllers;
 [Route("[controller]")]
 public class ReservationsController : ControllerBase
 {
-    private readonly ReservationService _reservationService;
+    private readonly IReservationService _reservationService;
 
-    public ReservationsController(ReservationService reservationService)
+    public ReservationsController(IReservationService reservationService)
     {
         _reservationService = reservationService;
     }
@@ -20,11 +19,19 @@ public class ReservationsController : ControllerBase
     [HttpGet("{id:guid}")]
     public ActionResult<Reservation> Get(Guid id)
     {
-        
+
+        return Ok(_reservationService.Get(id));
+    } 
+    
+    [HttpGet]
+    public ActionResult<Reservation> Get()
+    {
+
         return Ok(_reservationService.GetAllWeekly());
     }
+   
     
-    [HttpPut]
+    [HttpPost]
     public IActionResult Post(CreateReservation command)
     {
         var id = _reservationService.Create(command with {ReservationId = Guid.NewGuid()});

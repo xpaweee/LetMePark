@@ -1,0 +1,17 @@
+C:\Users\xpaweee\Desktop\LetMePark\LetMePark.Infrastructure\bin\Debug\net6.0\LetMePark.Infrastructure.deps.json
+C:\Users\xpaweee\Desktop\LetMePark\LetMePark.Infrastructure\bin\Debug\net6.0\LetMePark.Infrastructure.dll
+C:\Users\xpaweee\Desktop\LetMePark\LetMePark.Infrastructure\bin\Debug\net6.0\LetMePark.Infrastructure.pdb
+C:\Users\xpaweee\Desktop\LetMePark\LetMePark.Infrastructure\bin\Debug\net6.0\LetMePark.Application.dll
+C:\Users\xpaweee\Desktop\LetMePark\LetMePark.Infrastructure\bin\Debug\net6.0\LetMePark.Core.dll
+C:\Users\xpaweee\Desktop\LetMePark\LetMePark.Infrastructure\bin\Debug\net6.0\LetMePark.Application.pdb
+C:\Users\xpaweee\Desktop\LetMePark\LetMePark.Infrastructure\bin\Debug\net6.0\LetMePark.Core.pdb
+C:\Users\xpaweee\Desktop\LetMePark\LetMePark.Infrastructure\obj\Debug\net6.0\LetMePark.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\xpaweee\Desktop\LetMePark\LetMePark.Infrastructure\obj\Debug\net6.0\LetMePark.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\xpaweee\Desktop\LetMePark\LetMePark.Infrastructure\obj\Debug\net6.0\LetMePark.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\xpaweee\Desktop\LetMePark\LetMePark.Infrastructure\obj\Debug\net6.0\LetMePark.Infrastructure.AssemblyInfo.cs
+C:\Users\xpaweee\Desktop\LetMePark\LetMePark.Infrastructure\obj\Debug\net6.0\LetMePark.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\xpaweee\Desktop\LetMePark\LetMePark.Infrastructure\obj\Debug\net6.0\LetMePark.Infrastructure.csproj.CopyComplete
+C:\Users\xpaweee\Desktop\LetMePark\LetMePark.Infrastructure\obj\Debug\net6.0\LetMePark.Infrastructure.dll
+C:\Users\xpaweee\Desktop\LetMePark\LetMePark.Infrastructure\obj\Debug\net6.0\refint\LetMePark.Infrastructure.dll
+C:\Users\xpaweee\Desktop\LetMePark\LetMePark.Infrastructure\obj\Debug\net6.0\LetMePark.Infrastructure.pdb
+C:\Users\xpaweee\Desktop\LetMePark\LetMePark.Infrastructure\obj\Debug\net6.0\ref\LetMePark.Infrastructure.dll

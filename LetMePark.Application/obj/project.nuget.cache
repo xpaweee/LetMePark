@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "KTMaNin8bNvcpFAU2wNFBojm5FdOal6uDlqm0Z9b31Mtxrk5T8C1yiweFxre9cjLM2QdDnEA37R/LGlgd7jVZw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\xpaweee\\Desktop\\LetMePark\\LetMePark.Application\\LetMePark.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\xpaweee\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
