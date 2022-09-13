@@ -39,3 +39,6 @@ C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Npgsql.dll
 C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Humanizer.dll
 C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
