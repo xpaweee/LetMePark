@@ -24,7 +24,7 @@ public class WeeklyParkingSpotTests
     public void given_invalid_date_add_reservation_should_fail(string dateString)
     {
         var invalidDate = DateTime.Parse(dateString);
-        var reservation = new Reservation(Guid.NewGuid(), _weeklyParkingSpot.Id, "John Doe", "Test123",
+        var reservation = new VehicleReservation(Guid.NewGuid(), _weeklyParkingSpot.Id, "John Doe", "Test123",
             new Date(invalidDate));
 
         var exception = Record.Exception(() => _weeklyParkingSpot.AddReservation(reservation, _now));
@@ -38,10 +38,10 @@ public class WeeklyParkingSpotTests
     {
         var reservationDate = _now.AddDays(1);
         var reservation =
-            new Reservation(Guid.NewGuid(), _weeklyParkingSpot.Id, "John Doe", "TEST123", reservationDate);
+            new VehicleReservation(Guid.NewGuid(), _weeklyParkingSpot.Id, "John Doe", "TEST123", reservationDate);
         _weeklyParkingSpot.AddReservation(reservation, _now);   
         var nextReservation =
-            new Reservation(Guid.NewGuid(), _weeklyParkingSpot.Id, "John Doe", "TEST123", reservationDate);
+            new VehicleReservation(Guid.NewGuid(), _weeklyParkingSpot.Id, "John Doe", "TEST123", reservationDate);
         _weeklyParkingSpot.AddReservation(reservation, _now);
         _weeklyParkingSpot.AddReservation(nextReservation, _now);   
         
@@ -56,7 +56,7 @@ public class WeeklyParkingSpotTests
     {
         var reservationDate = _now.AddDays(1);
         var reservation =
-            new Reservation(Guid.NewGuid(), _weeklyParkingSpot.Id, "John Doe", "TEST123", reservationDate);
+            new VehicleReservation(Guid.NewGuid(), _weeklyParkingSpot.Id, "John Doe", "TEST123", reservationDate);
         
         _weeklyParkingSpot.AddReservation(reservation, _now);
 

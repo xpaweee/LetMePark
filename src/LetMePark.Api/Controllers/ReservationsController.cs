@@ -1,4 +1,5 @@
-﻿using LetMePark.Api.Commands;
+﻿using System.Resources;
+using LetMePark.Api.Commands;
 using LetMePark.Api.Services;
 using LetMePark.Core.Entities;
 using Microsoft.AspNetCore.Mvc;
@@ -17,24 +18,30 @@ public class ReservationsController : ControllerBase
     }
 
     [HttpGet("{id:guid}")]
-    public ActionResult<Reservation> Get(Guid id)
+    public async Task<ActionResult<Reservation>> Get(Guid id)
     {
 
-        return Ok(_reservationService.Get(id));
+        var reservation = await _reservationService.GetAsync(id);
+        if (reservation is null)
+        {
+            return NotFound();
+        }
+
+        return Ok(reservation);
     } 
     
     [HttpGet]
-    public ActionResult<Reservation> Get()
+    public async Task<ActionResult<Reservation>> Get()
     {
 
-        return Ok(_reservationService.GetAllWeekly());
+        return Ok(await _reservationService.GetAllWeeklyAsync());
     }
    
     
-    [HttpPost]
-    public IActionResult Post(CreateReservation command)
+    [HttpPost("vehicle")]
+    public async Task<IActionResult> Post(ReserveParkingSpotForVehicle command)
     {
-        var id = _reservationService.Create(command with {ReservationId = Guid.NewGuid()});
+        var id = await _reservationService.ReserveForVehicleAsync(command with {ReservationId = Guid.NewGuid()});
         
         if(id is null)
         {
@@ -42,13 +49,21 @@ public class ReservationsController : ControllerBase
         }
         
         return CreatedAtAction(nameof(Get), new {id}, null);
+    }  
+    
+    [HttpPost("cleaning")]
+    public async Task<IActionResult> Post(ReserveParkingSpotForCleaning command)
+    {
+        await _reservationService.ReserveForCleaningAsync(command);
+
+        return Ok();
     } 
     
     [HttpPut("{id:guid}")]
-    public IActionResult Put(Guid id, ChangeReservationLicensePlate command)
+    public async Task<IActionResult> Put(Guid id, ChangeReservationLicensePlate command)
     {
 
-        if (_reservationService.Update(command with { ReservationId = id }))
+        if (await _reservationService.ChangeReservationLicensePlateAsync(command with { ReservationId = id }))
         {
             return NoContent();
         }
@@ -57,9 +72,9 @@ public class ReservationsController : ControllerBase
     }   
     
     [HttpDelete("{id:guid}")]
-    public IActionResult Delete(Guid id)
+    public async Task<IActionResult> Delete(Guid id)
     {
-        if (_reservationService.Delete(new DeleteReservation(id)))
+        if (await _reservationService.DeleteAsync(new DeleteReservation(id)))
         {
             return NoContent();
         }

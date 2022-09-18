@@ -19,36 +19,46 @@ namespace LetMePark.Infrastructure.DAL.Repository
             _dbContext = dbContext;
         }
 
-        public void Add(WeeklyParkingSpot weeklyParkingSpot)
+        public async Task AddAsync(WeeklyParkingSpot weeklyParkingSpot)
         {
-            _dbContext.Add(weeklyParkingSpot);
-            _dbContext.SaveChanges();
+            await _dbContext.AddAsync(weeklyParkingSpot);
+            await _dbContext.SaveChangesAsync();
         }
 
-        public void Delete(WeeklyParkingSpot weeklyParkingSpot)
+        public async Task DeleteAsync(WeeklyParkingSpot weeklyParkingSpot)
         {
             _dbContext.Remove(weeklyParkingSpot);
-            _dbContext.SaveChanges();
+            await _dbContext.SaveChangesAsync();
         }
 
-        public WeeklyParkingSpot Get(ParkingSpotId id)
+        public Task<WeeklyParkingSpot> GetAsync(ParkingSpotId id)
         {
             return _dbContext.WeeklyParkingSpots
                 .Include(x => x.Reservations)
-                .SingleOrDefault(x => x.Id == id);
-        }
-
-        public IEnumerable<WeeklyParkingSpot> GetAll()
+                .SingleOrDefaultAsync(x => x.Id == id);
+        } 
+        
+        public async Task<IEnumerable<WeeklyParkingSpot>>  GetByWeekAsync(Week week)
         {
-            return _dbContext.WeeklyParkingSpots
+            return await _dbContext.WeeklyParkingSpots
                 .Include(x => x.Reservations)
-                .ToList();
+                .Where(x => x.Week == week)
+                .ToListAsync();
         }
 
-        public void Update(WeeklyParkingSpot weeklyParkingSpot)
+        public async Task<IEnumerable<WeeklyParkingSpot>> GetAllAsync()
+        {
+            var result = await _dbContext.WeeklyParkingSpots
+                .Include(x => x.Reservations)
+                .ToListAsync();
+
+            return result.AsEnumerable();
+        }
+
+        public async Task UpdateAsync(WeeklyParkingSpot weeklyParkingSpot)
         {
             _dbContext.Update(weeklyParkingSpot);
-            _dbContext.SaveChanges();
+            await _dbContext.SaveChangesAsync();
         }
     }
 }

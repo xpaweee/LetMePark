@@ -5,10 +5,11 @@ namespace LetMePark.Api.Services
 {
     public interface IReservationService
     {
-        ReservationDto Get(Guid id);
-        IEnumerable<ReservationDto> GetAllWeekly();
-        Guid? Create(CreateReservation command);
-        bool Update(ChangeReservationLicensePlate command);
-        bool Delete(DeleteReservation command);
+        Task<ReservationDto> GetAsync(Guid id);
+        Task<IEnumerable<ReservationDto>> GetAllWeeklyAsync();
+        Task<Guid?> ReserveForVehicleAsync(ReserveParkingSpotForVehicle command);
+        Task ReserveForCleaningAsync(ReserveParkingSpotForCleaning command);
+        Task<bool> ChangeReservationLicensePlateAsync(ChangeReservationLicensePlate command);
+        Task<bool> DeleteAsync(DeleteReservation command);
     }
 }

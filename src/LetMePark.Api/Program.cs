@@ -20,10 +20,6 @@ builder.Services
 
 var app = builder.Build();
 
-app.MapControllers();
-
-
-
-
+app.UseInfrastructure();
 
 app.Run();

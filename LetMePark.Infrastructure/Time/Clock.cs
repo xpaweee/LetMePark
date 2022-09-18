@@ -1,4 +1,5 @@
 ﻿using LetMePark.Api.Services;
+using LetMePark.Core.Abstractions;
 
 namespace LetMePark.Application.Services
 {

@@ -5,9 +5,10 @@ namespace LetMePark.Core.Repository;
 
 public interface IWeeklyParkingSpotRepository
 {
-    IEnumerable<WeeklyParkingSpot> GetAll();
-    WeeklyParkingSpot Get(ParkingSpotId id);
-    void Add(WeeklyParkingSpot weeklyParkingSpot);
-    void Update(WeeklyParkingSpot weeklyParkingSpot);
-    void Delete(WeeklyParkingSpot weeklyParkingSpot);
+    Task<IEnumerable<WeeklyParkingSpot>> GetAllAsync();
+    Task<IEnumerable<WeeklyParkingSpot>> GetByWeekAsync(Week week) => throw new NotImplementedException();
+    Task<WeeklyParkingSpot> GetAsync(ParkingSpotId id);
+    Task AddAsync(WeeklyParkingSpot weeklyParkingSpot);
+    Task UpdateAsync(WeeklyParkingSpot weeklyParkingSpot);
+    Task DeleteAsync(WeeklyParkingSpot weeklyParkingSpot);
 }

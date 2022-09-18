@@ -30,14 +30,12 @@ namespace LetMePark.Infrastructure.DAL.Migrations
                     b.Property<DateTimeOffset?>("Date")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<string>("EmployeeName")
-                        .HasColumnType("text");
-
-                    b.Property<string>("LicensePlate")
-                        .HasColumnType("text");
-
                     b.Property<Guid?>("ParkingSpotId")
                         .HasColumnType("uuid");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<Guid?>("WeeklyParkingSpotId")
                         .HasColumnType("uuid");
@@ -47,6 +45,8 @@ namespace LetMePark.Infrastructure.DAL.Migrations
                     b.HasIndex("WeeklyParkingSpotId");
 
                     b.ToTable("Reservations");
+
+                    b.HasDiscriminator<string>("Type").HasValue("Reservation");
                 });
 
             modelBuilder.Entity("LetMePark.Core.Entities.WeeklyParkingSpot", b =>
@@ -63,6 +63,26 @@ namespace LetMePark.Infrastructure.DAL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("WeeklyParkingSpots");
+                });
+
+            modelBuilder.Entity("LetMePark.Core.Entities.CleaningReservation", b =>
+                {
+                    b.HasBaseType("LetMePark.Core.Entities.Reservation");
+
+                    b.HasDiscriminator().HasValue("CleaningReservation");
+                });
+
+            modelBuilder.Entity("LetMePark.Core.Entities.VehicleReservation", b =>
+                {
+                    b.HasBaseType("LetMePark.Core.Entities.Reservation");
+
+                    b.Property<string>("EmployeeName")
+                        .HasColumnType("text");
+
+                    b.Property<string>("LicensePlate")
+                        .HasColumnType("text");
+
+                    b.HasDiscriminator().HasValue("VehicleReservation");
                 });
 
             modelBuilder.Entity("LetMePark.Core.Entities.Reservation", b =>

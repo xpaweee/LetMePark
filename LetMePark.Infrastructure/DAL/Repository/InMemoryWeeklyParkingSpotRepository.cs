@@ -1,4 +1,5 @@
 ﻿using LetMePark.Api.Services;
+using LetMePark.Core.Abstractions;
 using LetMePark.Core.Entities;
 using LetMePark.Core.Repository;
 using LetMePark.Core.ValueObjects;
@@ -24,20 +25,25 @@ internal class InMemoryWeeklyParkingSpotRepository : IWeeklyParkingSpotRepositor
         };
     }
 
-    public IEnumerable<WeeklyParkingSpot> GetAll()
-        => _weeklyParkingSpots;
+    public Task<IEnumerable<WeeklyParkingSpot>> GetAllAsync()
+        => Task.FromResult(_weeklyParkingSpots.AsEnumerable());
 
-    public WeeklyParkingSpot Get(ParkingSpotId id)
-        => _weeklyParkingSpots.SingleOrDefault(x => x.Id == id);
+    public Task<WeeklyParkingSpot> GetAsync(ParkingSpotId id)
+        => Task.FromResult(_weeklyParkingSpots.SingleOrDefault(x => x.Id == id));
 
-    public void Add(WeeklyParkingSpot weeklyParkingSpot)
-        => _weeklyParkingSpots.Add(weeklyParkingSpot);
-
-    public void Update(WeeklyParkingSpot weeklyParkingSpot)
+    public Task AddAsync(WeeklyParkingSpot weeklyParkingSpot)
     {
-
+        _weeklyParkingSpots.Add(weeklyParkingSpot);
+        return Task.CompletedTask;
+    }
+    public Task UpdateAsync(WeeklyParkingSpot weeklyParkingSpot)
+    {
+        return Task.CompletedTask;
     }
 
-    public void Delete(WeeklyParkingSpot weeklyParkingSpot)
-        => _weeklyParkingSpots.Remove(weeklyParkingSpot);
+    public Task DeleteAsync(WeeklyParkingSpot weeklyParkingSpot)
+    {
+        _weeklyParkingSpots.Remove(weeklyParkingSpot);
+        return Task.CompletedTask;
+    }
 }
