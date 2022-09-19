@@ -48,7 +48,7 @@ public class ReservationsController : ControllerBase
             return BadRequest();
         }
         
-        return CreatedAtAction(nameof(Get), new {id}, null);
+        return CreatedAtAction(nameof(Get), new {command.ReservationId}, null);
     }  
     
     [HttpPost("cleaning")]

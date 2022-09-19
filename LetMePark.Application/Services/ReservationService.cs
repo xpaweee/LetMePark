@@ -44,25 +44,7 @@ namespace LetMePark.Api.Services
 
         public async Task<Guid?> ReserveForVehicleAsync(ReserveParkingSpotForVehicle command)
         {
-            var parkingSpotId = new ParkingSpotId(command.ParkingSpotId);
-            var week = new Week(_clock.Current());
-
-            var weeklyParkingSpots = (await _weeklyParkingSpotRepository.GetByWeekAsync(week)).ToList();
-
-            var parkingSpotToReserve = weeklyParkingSpots.SingleOrDefault(x => x.Id == parkingSpotId);
-            if (parkingSpotToReserve is null)
-            {
-                return default;
-            }
-
-            var reservation = new VehicleReservation(command.ReservationId, command.ParkingSpotId, command.EmployeeName,
-                command.LicensePlate, new Date(command.Date));
-
-            _parkingReservationService.ReserveSpotForVehicle(weeklyParkingSpots, JobTitle.Employee, parkingSpotToReserve, reservation);
-            
-            await _weeklyParkingSpotRepository.UpdateAsync(parkingSpotToReserve);
-
-            return reservation.Id;
+           
         }
 
         public async Task ReserveForCleaningAsync(ReserveParkingSpotForCleaning command)

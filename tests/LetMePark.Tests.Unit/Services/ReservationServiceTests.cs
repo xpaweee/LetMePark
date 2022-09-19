@@ -37,7 +37,7 @@ public class ReservationServiceTests
     public async Task given_reservation_for_not_taken_date_create_reservation_should_succeed()
     {
         var weeklyParkingSpot = (await _weeklyParkingSpotRepository.GetAllAsync()).First();
-        var command = new ReserveParkingSpotForVehicle(weeklyParkingSpot.Id, Guid.NewGuid(), "John Doe", "Test123",
+        var command = new ReserveParkingSpotForVehicle(weeklyParkingSpot.Id, Guid.NewGuid(), 1,"John Doe", "Test123",
             DateTime.UtcNow.AddMinutes(5));
 
         var reservationId = await _reservationService.ReserveForVehicleAsync(command);

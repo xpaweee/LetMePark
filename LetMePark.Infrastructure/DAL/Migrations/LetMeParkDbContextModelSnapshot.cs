@@ -27,6 +27,9 @@ namespace LetMePark.Infrastructure.DAL.Migrations
                     b.Property<Guid>("Id")
                         .HasColumnType("uuid");
 
+                    b.Property<int>("Capacity")
+                        .HasColumnType("integer");
+
                     b.Property<DateTimeOffset?>("Date")
                         .HasColumnType("timestamp with time zone");
 
@@ -53,6 +56,9 @@ namespace LetMePark.Infrastructure.DAL.Migrations
                 {
                     b.Property<Guid>("Id")
                         .HasColumnType("uuid");
+
+                    b.Property<int>("Capacity")
+                        .HasColumnType("integer");
 
                     b.Property<string>("Name")
                         .HasColumnType("text");

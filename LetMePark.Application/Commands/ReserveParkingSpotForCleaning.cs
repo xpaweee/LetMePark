@@ -1,3 +1,5 @@
-﻿namespace LetMePark.Api.Commands;
+﻿using LetMePark.Application.Abstractions;
 
-public record ReserveParkingSpotForCleaning(DateTime Date);
+namespace LetMePark.Api.Commands;
+
+public record ReserveParkingSpotForCleaning(DateTime Date) : ICommand;

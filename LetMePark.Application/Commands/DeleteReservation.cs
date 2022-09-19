@@ -1,4 +1,6 @@
-﻿namespace LetMePark.Api.Commands
+﻿using LetMePark.Application.Abstractions;
+
+namespace LetMePark.Api.Commands
 {
-    public record DeleteReservation(Guid ReservationId);
+    public record DeleteReservation(Guid ReservationId) : ICommand;
 }
