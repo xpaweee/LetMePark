@@ -87,3 +87,5 @@ C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\vi\Humaniz
 C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\zh-CN\Humanizer.resources.dll
 C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\zh-Hans\Humanizer.resources.dll
 C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\zh-Hant\Humanizer.resources.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Scrutor.dll

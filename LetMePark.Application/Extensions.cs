@@ -1,4 +1,5 @@
-﻿using LetMePark.Api.Services;
+﻿using LetMePark.Api.Commands;
+using LetMePark.Application.Abstractions;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace LetMePark.Application
@@ -7,8 +8,12 @@ namespace LetMePark.Application
     {
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
-            services.AddScoped<IReservationService, ReservationService>();
-
+            var applicationAssembly = typeof(ICommandHandler<>).Assembly;
+            services.Scan(s => s.FromAssemblies(applicationAssembly)
+                .AddClasses(x => x.AssignableTo(typeof(ICommandHandler<>)))
+                .AsImplementedInterfaces()
+                .WithScopedLifetime());
+            
             return services;
         }
       

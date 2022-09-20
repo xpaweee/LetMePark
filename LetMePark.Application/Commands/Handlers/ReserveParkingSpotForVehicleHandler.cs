@@ -1,4 +1,5 @@
-﻿using LetMePark.Application.Abstractions;
+﻿using LetMePark.Api.Commands;
+using LetMePark.Application.Abstractions;
 using LetMePark.Application.Exceptions;
 using LetMePark.Core.Abstractions;
 using LetMePark.Core.DomainServices;
@@ -6,7 +7,7 @@ using LetMePark.Core.Entities;
 using LetMePark.Core.Repository;
 using LetMePark.Core.ValueObjects;
 
-namespace LetMePark.Api.Commands.Handlers;
+namespace LetMePark.Application.Commands.Handlers;
 
 public sealed class ReserveParkingSpotForVehicleHandler : ICommandHandler<ReserveParkingSpotForVehicle>
 {

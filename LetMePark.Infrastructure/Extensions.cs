@@ -1,8 +1,8 @@
-﻿using LetMePark.Api.Services;
-using LetMePark.Application.Services;
+﻿using LetMePark.Application.Services;
 using LetMePark.Infrastructure.DAL;
 using Microsoft.Extensions.DependencyInjection;
 using System.Runtime.CompilerServices;
+using LetMePark.Application.Abstractions;
 using LetMePark.Core.Abstractions;
 using LetMePark.Infrastructure.Exceptions;
 using Microsoft.AspNetCore.Builder;
@@ -19,6 +19,13 @@ namespace LetMePark.Infrastructure
                 .AddSingleton<ExceptionMiddleware>()
                 .AddSingleton<IClock, Clock>()
                 .AddPostgres(configuration);
+            
+            var infraAssembly = typeof(AppOptions).Assembly;
+            services.Scan(s => s.FromAssemblies(infraAssembly)
+                .AddClasses(x => x.AssignableTo(typeof(IQueryHandler<,>)))
+                .AsImplementedInterfaces()
+                .WithScopedLifetime());
+            
 
             return services;
         }
