@@ -17,13 +17,12 @@ namespace LetMePark.Infrastructure.DAL.Repository
         public async Task AddAsync(WeeklyParkingSpot weeklyParkingSpot)
         {
             await _dbContext.AddAsync(weeklyParkingSpot);
-            await _dbContext.SaveChangesAsync();
         }
 
         public async Task DeleteAsync(WeeklyParkingSpot weeklyParkingSpot)
         {
             _dbContext.Remove(weeklyParkingSpot);
-            await _dbContext.SaveChangesAsync();
+            
         }
 
         public Task<WeeklyParkingSpot> GetAsync(ParkingSpotId id)

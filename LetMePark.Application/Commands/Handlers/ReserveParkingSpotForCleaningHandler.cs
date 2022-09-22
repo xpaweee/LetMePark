@@ -27,5 +27,10 @@ public sealed class ReserveParkingSpotForCleaningHandler : ICommandHandler<Reser
 
         var tasks = weeklyParkingSpots.Select(x => _repository.UpdateAsync(x));
         await Task.WhenAll(tasks);
+
+        // foreach (var weeklyParkingSpot in weeklyParkingSpots)
+        // {
+        //     await _repository.UpdateAsync(weeklyParkingSpot);
+        // }
     }
 }
