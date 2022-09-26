@@ -5,6 +5,7 @@ using System.Runtime.CompilerServices;
 using LetMePark.Application.Abstractions;
 using LetMePark.Core.Abstractions;
 using LetMePark.Infrastructure.Exceptions;
+using LetMePark.Infrastructure.Logging;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 
@@ -26,6 +27,7 @@ namespace LetMePark.Infrastructure
                 .AsImplementedInterfaces()
                 .WithScopedLifetime());
             
+            services.AddCustomLogging();
 
             return services;
         }

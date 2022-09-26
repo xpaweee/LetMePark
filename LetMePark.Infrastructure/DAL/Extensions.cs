@@ -3,6 +3,8 @@ using LetMePark.Application.Abstractions;
 using LetMePark.Core.Repository;
 using LetMePark.Infrastructure.DAL.Decorators;
 using LetMePark.Infrastructure.DAL.Repository;
+using LetMePark.Infrastructure.Logging;
+using LetMePark.Infrastructure.Logging.Decorators;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -20,7 +22,6 @@ namespace LetMePark.Infrastructure.DAL
             services.AddScoped<IUnitOfWork, PostgresUnitOfWork>();
             services.AddHostedService<DatabaseInitializer>();
             services.TryDecorate(typeof(ICommandHandler<>), typeof(UnitOfWorkCommandHandlerDecorator<>));
-            services.TryDecorate(typeof(ICommandHandler<>), typeof(LoggingCommandHandlerDecorator<>));
             
             AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
                

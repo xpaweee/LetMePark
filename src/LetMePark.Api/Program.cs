@@ -4,7 +4,9 @@ using LetMePark.Core;
 using LetMePark.Core.ValueObjects;
 using LetMePark.Infrastructure;
 using LetMePark.Infrastructure.DAL;
+using LetMePark.Infrastructure.Logging;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +18,8 @@ builder.Services
         .AddCore()
         .AddApplication()
         .AddInfrastructure(builder.Configuration);
-        
+
+builder.UseSerilog();
 
 var app = builder.Build();
 
