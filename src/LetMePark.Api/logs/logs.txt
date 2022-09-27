@@ -1,0 +1,66 @@
+2022-09-27 19:55:46.978 +02:00 [INF] Entity Framework Core 6.0.8 initialized 'LetMeParkDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-09-27 19:55:47.830 +02:00 [INF] Executed DbCommand (79ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2022-09-27 19:55:47.884 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2022-09-27 19:55:47.905 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2022-09-27 19:55:47.933 +02:00 [INF] No migrations were applied. The database is already up to date.
+2022-09-27 19:55:48.168 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT w."Id", w."Capacity", w."Name", w."Week"
+FROM "WeeklyParkingSpots" AS w
+2022-09-27 19:55:48.302 +02:00 [INF] Now listening on: http://localhost:5000
+2022-09-27 19:55:48.306 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-27 19:55:48.307 +02:00 [INF] Hosting environment: Development
+2022-09-27 19:55:48.308 +02:00 [INF] Content root path: C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\
+2022-09-27 19:55:51.936 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/users application/json 138
+2022-09-27 19:55:51.977 +02:00 [INF] Executing endpoint 'LetMePark.Api.Controllers.UsersController.Post (LetMePark.Api)'
+2022-09-27 19:55:52.003 +02:00 [INF] Route matched with {action = "Post", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Post(LetMePark.Api.Commands.SignUp) on controller LetMePark.Api.Controllers.UsersController (LetMePark.Api).
+2022-09-27 19:55:52.179 +02:00 [INF] Started handling a command: sign_up
+2022-09-27 19:55:52.186 +02:00 [INF] Entity Framework Core 6.0.8 initialized 'LetMeParkDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-09-27 19:55:52.266 +02:00 [INF] Complete handling a command: sign_up in "00:00:00.0874762"
+2022-09-27 19:55:52.273 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-09-27 19:55:52.281 +02:00 [INF] Executed action LetMePark.Api.Controllers.UsersController.Post (LetMePark.Api) in 270.1861ms
+2022-09-27 19:55:52.284 +02:00 [INF] Executed endpoint 'LetMePark.Api.Controllers.UsersController.Post (LetMePark.Api)'
+2022-09-27 19:55:52.293 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/users application/json 138 - 204 - - 360.0484ms
+2022-09-27 19:56:18.236 +02:00 [INF] Application is shutting down...
+2022-09-27 19:56:47.462 +02:00 [INF] Entity Framework Core 6.0.8 initialized 'LetMeParkDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-09-27 19:56:48.004 +02:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2022-09-27 19:56:48.061 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2022-09-27 19:56:48.080 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2022-09-27 19:56:48.102 +02:00 [INF] No migrations were applied. The database is already up to date.
+2022-09-27 19:56:48.424 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT w."Id", w."Capacity", w."Name", w."Week"
+FROM "WeeklyParkingSpots" AS w
+2022-09-27 19:56:48.520 +02:00 [INF] Now listening on: http://localhost:5000
+2022-09-27 19:56:48.528 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-27 19:56:48.531 +02:00 [INF] Hosting environment: Development
+2022-09-27 19:56:48.532 +02:00 [INF] Content root path: C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\
+2022-09-27 19:56:51.599 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/users application/json 138
+2022-09-27 19:56:51.647 +02:00 [INF] Executing endpoint 'LetMePark.Api.Controllers.UsersController.Post (LetMePark.Api)'
+2022-09-27 19:56:51.681 +02:00 [INF] Route matched with {action = "Post", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Post(LetMePark.Api.Commands.SignUp) on controller LetMePark.Api.Controllers.UsersController (LetMePark.Api).
+2022-09-27 19:57:02.093 +02:00 [INF] Started handling a command: sign_up
+2022-09-27 19:57:02.100 +02:00 [INF] Entity Framework Core 6.0.8 initialized 'LetMeParkDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-09-27 19:57:02.179 +02:00 [INF] Complete handling a command: sign_up in "00:00:00.0863418"
+2022-09-27 19:57:12.978 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-09-27 19:57:12.986 +02:00 [INF] Executed action LetMePark.Api.Controllers.UsersController.Post (LetMePark.Api) in 21290.8156ms
+2022-09-27 19:57:12.990 +02:00 [INF] Executed endpoint 'LetMePark.Api.Controllers.UsersController.Post (LetMePark.Api)'
+2022-09-27 19:57:13.002 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/users application/json 138 - 204 - - 21405.6359ms
+2022-09-27 19:57:16.120 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/users application/json 138
+2022-09-27 19:57:16.142 +02:00 [INF] Executing endpoint 'LetMePark.Api.Controllers.UsersController.Post (LetMePark.Api)'
+2022-09-27 19:57:16.143 +02:00 [INF] Route matched with {action = "Post", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Post(LetMePark.Api.Commands.SignUp) on controller LetMePark.Api.Controllers.UsersController (LetMePark.Api).
+2022-09-27 19:57:18.836 +02:00 [INF] Started handling a command: sign_up
+2022-09-27 19:57:18.886 +02:00 [INF] Entity Framework Core 6.0.8 initialized 'LetMeParkDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-09-27 19:57:24.237 +02:00 [INF] Complete handling a command: sign_up in "00:00:05.4000659"
+2022-09-27 19:57:24.239 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-09-27 19:57:24.240 +02:00 [INF] Executed action LetMePark.Api.Controllers.UsersController.Post (LetMePark.Api) in 8094.7402ms
+2022-09-27 19:57:24.242 +02:00 [INF] Executed endpoint 'LetMePark.Api.Controllers.UsersController.Post (LetMePark.Api)'
+2022-09-27 19:57:24.243 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/users application/json 138 - 204 - - 8123.4579ms
+2022-09-27 20:22:28.968 +02:00 [INF] Entity Framework Core 6.0.8 initialized 'LetMeParkDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None

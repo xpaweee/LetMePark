@@ -6,6 +6,7 @@ using LetMePark.Application.Abstractions;
 using LetMePark.Core.Abstractions;
 using LetMePark.Infrastructure.Exceptions;
 using LetMePark.Infrastructure.Logging;
+using LetMePark.Infrastructure.Security;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 
@@ -20,6 +21,7 @@ namespace LetMePark.Infrastructure
                 .AddSingleton<ExceptionMiddleware>()
                 .AddSingleton<IClock, Clock>()
                 .AddPostgres(configuration);
+            services.AddSecurity();
             
             var infraAssembly = typeof(AppOptions).Assembly;
             services.Scan(s => s.FromAssemblies(infraAssembly)
@@ -28,6 +30,7 @@ namespace LetMePark.Infrastructure
                 .WithScopedLifetime());
             
             services.AddCustomLogging();
+           
 
             return services;
         }

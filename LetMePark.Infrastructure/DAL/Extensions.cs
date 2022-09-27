@@ -19,6 +19,7 @@ namespace LetMePark.Infrastructure.DAL
             var options = GetOptions<PostgresOptions>(configuration, SectionName);
             services.AddDbContext<LetMeParkDbContext>(x => x.UseNpgsql(options.ConnectionString));
             services.AddScoped<IWeeklyParkingSpotRepository, PostgresWeeklyParkingSpotRepository>();
+            services.AddScoped<IUserRepository, PostgresUserRepository>();
             services.AddScoped<IUnitOfWork, PostgresUnitOfWork>();
             services.AddHostedService<DatabaseInitializer>();
             services.TryDecorate(typeof(ICommandHandler<>), typeof(UnitOfWorkCommandHandlerDecorator<>));
