@@ -100,3 +100,10 @@ C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Serilog.Si
 C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Serilog.Sinks.File.dll
 C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Serilog.Sinks.PeriodicBatching.dll
 C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Serilog.Sinks.Seq.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

@@ -4,9 +4,42 @@
 
 @parkingSpotId = 00000000-0000-0000-0000-000000000001
 
+###
+@accessToken = {{sign_in.response.body.$.accessToken}}
 
 ###
-GET {{url}}/reservations
+POST {{url}}/users
+Content-Type: application/json
+
+{
+    "email": "user1@test.com",
+    "username": "test1",
+    "password": "test123",
+    "fullName": "John Doe",
+    "role": "user"
+}
+
+
+
+###
+# @name sign_in
+POST {{url}}/users/sign-in
+Content-Type: application/json
+
+{
+    "email": "user1@test.com",
+    "password": "test123"
+}
+
+
+
+###
+GET {{url}}/users/me
+Authorization: Bearer {{accessToken}}
+
+
+###
+GET {{url}}/parking-spot
 
 
 ###
@@ -14,13 +47,13 @@ GET {{url}}/reservations/{{reservationId}}
 
 
 ###
-POST {{url}}/reservations/vehicle
+POST {{url}}/parking-spot/{{parkingSpotId}}/reservations/vehicle
 Content-Type: application/json
 
 {
-    "ParkingSpotId": "00000000-0000-0000-0000-000000000001",
     "EmployeeName": "John Doe",
     "LicensePlate": "XYZ123",
+    "capacity": 1,
     "date": "2022-08-14"
 
 }

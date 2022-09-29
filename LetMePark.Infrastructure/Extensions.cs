@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System.Runtime.CompilerServices;
 using LetMePark.Application.Abstractions;
 using LetMePark.Core.Abstractions;
+using LetMePark.Infrastructure.Auth;
 using LetMePark.Infrastructure.Exceptions;
 using LetMePark.Infrastructure.Logging;
 using LetMePark.Infrastructure.Security;
@@ -22,6 +23,8 @@ namespace LetMePark.Infrastructure
                 .AddSingleton<IClock, Clock>()
                 .AddPostgres(configuration);
             services.AddSecurity();
+            services.AddAuth(configuration);
+            services.AddHttpContextAccessor();
             
             var infraAssembly = typeof(AppOptions).Assembly;
             services.Scan(s => s.FromAssemblies(infraAssembly)
@@ -38,6 +41,8 @@ namespace LetMePark.Infrastructure
         public static WebApplication UseInfrastructure(this WebApplication app)
         {
             app.UseMiddleware<ExceptionMiddleware>();
+            app.UseAuthentication();
+            app.UseAuthorization();
             app.MapControllers();
 
             return app;
