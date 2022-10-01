@@ -17,6 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyProductAttribute("LetMePark.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LetMePark.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("LetMePark.Tests.Integration")]
 
 // Wygenerowane przez klasę WriteCodeFragment programu MSBuild.
 

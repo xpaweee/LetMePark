@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace LetMePark.Infrastructure.DAL
 {
-    internal sealed class LetMeParkDbContext : DbContext
+    public sealed class LetMeParkDbContext : DbContext
     {
         public DbSet<Reservation> Reservations { get; set; }
         public DbSet<WeeklyParkingSpot> WeeklyParkingSpots { get; set; }

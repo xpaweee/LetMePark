@@ -107,3 +107,6 @@ C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Microsoft.
 C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.ReDoc.dll
+C:\Users\xpaweee\Desktop\LetMePark\src\LetMePark.Api\bin\Debug\net6.0\appsettings.test.json

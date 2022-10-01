@@ -18,6 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyTitleAttribute("LetMePark.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.CompilerServices.InternalsVisibleTo("LetMePark.Tests.Unit")]
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("LetMePark.Tests.Integration")]
 
 // Wygenerowane przez klasę WriteCodeFragment programu MSBuild.
 

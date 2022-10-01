@@ -35,7 +35,14 @@ public static class Extensions
                 };
             });
 
-        serviceCollection.AddAuthorization();
+        serviceCollection.AddAuthorization(authorization =>
+        {
+            authorization.AddPolicy("is-admin", policy =>
+            {
+                //chain builder
+                policy.RequireRole("admin");
+            });
+        });
         
         return serviceCollection;
     }

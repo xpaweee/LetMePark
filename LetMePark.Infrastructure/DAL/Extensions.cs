@@ -16,7 +16,10 @@ namespace LetMePark.Infrastructure.DAL
         private const string SectionName = "postgres";
         public static IServiceCollection AddPostgres(this IServiceCollection services, IConfiguration configuration)
         {
-            var options = GetOptions<PostgresOptions>(configuration, SectionName);
+            var section = configuration.GetSection(SectionName);
+            services.Configure<PostgresOptions>(section);
+            
+            var options = configuration.GetOptions<PostgresOptions>(SectionName);
             services.AddDbContext<LetMeParkDbContext>(x => x.UseNpgsql(options.ConnectionString));
             services.AddScoped<IWeeklyParkingSpotRepository, PostgresWeeklyParkingSpotRepository>();
             services.AddScoped<IUserRepository, PostgresUserRepository>();
@@ -30,13 +33,6 @@ namespace LetMePark.Infrastructure.DAL
             return services;
         }
 
-        public static T GetOptions<T>(this IConfiguration configuration, string sectionName) where T : class, new()
-        {
-            var options = new T();
-            var section = configuration.GetSection(sectionName);
-            section.Bind(options);
-
-            return options;
-        }
+      
     }
 }

@@ -1,0 +1,199 @@
+2022-10-01 13:52:03.749 +02:00 [INF] User profile is available. Using 'C:\Users\xpaweee\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-10-01 13:52:05.119 +02:00 [INF] Entity Framework Core 6.0.7 initialized 'LetMeParkDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-10-01 13:52:05.704 +02:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2022-10-01 13:52:05.776 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2022-10-01 13:52:05.807 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2022-10-01 13:52:05.829 +02:00 [INF] No migrations were applied. The database is already up to date.
+2022-10-01 13:52:06.087 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT w."Id", w."Capacity", w."Name", w."Week"
+FROM "WeeklyParkingSpots" AS w
+2022-10-01 13:52:09.312 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2022-10-01 13:52:09.477 +02:00 [INF] Executing endpoint 'LetMePark.Api.Controllers.HomeController.Get (LetMePark.Api)'
+2022-10-01 13:52:09.488 +02:00 [INF] Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.String] Get() on controller LetMePark.Api.Controllers.HomeController (LetMePark.Api).
+2022-10-01 13:52:09.498 +02:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2022-10-01 13:52:09.503 +02:00 [INF] Executed action LetMePark.Api.Controllers.HomeController.Get (LetMePark.Api) in 8.8519ms
+2022-10-01 13:52:09.505 +02:00 [INF] Executed endpoint 'LetMePark.Api.Controllers.HomeController.Get (LetMePark.Api)'
+2022-10-01 13:52:09.528 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 204 0 - 213.8853ms
+2022-10-01 13:53:20.646 +02:00 [INF] User profile is available. Using 'C:\Users\xpaweee\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-10-01 13:53:21.554 +02:00 [INF] Entity Framework Core 6.0.7 initialized 'LetMeParkDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-10-01 13:53:22.069 +02:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2022-10-01 13:53:22.121 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2022-10-01 13:53:22.140 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2022-10-01 13:53:22.159 +02:00 [INF] No migrations were applied. The database is already up to date.
+2022-10-01 13:53:22.314 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT w."Id", w."Capacity", w."Name", w."Week"
+FROM "WeeklyParkingSpots" AS w
+2022-10-01 13:53:23.703 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2022-10-01 13:53:23.846 +02:00 [INF] Executing endpoint 'LetMePark.Api.Controllers.HomeController.Get (LetMePark.Api)'
+2022-10-01 13:53:23.854 +02:00 [INF] Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.String] Get() on controller LetMePark.Api.Controllers.HomeController (LetMePark.Api).
+2022-10-01 13:53:23.863 +02:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2022-10-01 13:53:23.868 +02:00 [INF] Executed action LetMePark.Api.Controllers.HomeController.Get (LetMePark.Api) in 8.0234ms
+2022-10-01 13:53:23.871 +02:00 [INF] Executed endpoint 'LetMePark.Api.Controllers.HomeController.Get (LetMePark.Api)'
+2022-10-01 13:53:23.882 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 204 0 - 180.1818ms
+2022-10-01 13:56:43.575 +02:00 [INF] User profile is available. Using 'C:\Users\xpaweee\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-10-01 13:56:44.522 +02:00 [INF] Entity Framework Core 6.0.7 initialized 'LetMeParkDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-10-01 13:56:44.862 +02:00 [INF] Executed DbCommand (73ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2022-10-01 13:56:44.909 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2022-10-01 13:56:44.920 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2022-10-01 13:56:44.939 +02:00 [INF] No migrations were applied. The database is already up to date.
+2022-10-01 13:56:45.107 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT w."Id", w."Capacity", w."Name", w."Week"
+FROM "WeeklyParkingSpots" AS w
+2022-10-01 13:56:45.213 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2022-10-01 13:56:45.281 +02:00 [INF] Executing endpoint 'LetMePark.Api.Controllers.HomeController.Get (LetMePark.Api)'
+2022-10-01 13:56:45.288 +02:00 [INF] Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.String] Get() on controller LetMePark.Api.Controllers.HomeController (LetMePark.Api).
+2022-10-01 13:56:45.294 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2022-10-01 13:56:45.305 +02:00 [INF] Executed action LetMePark.Api.Controllers.HomeController.Get (LetMePark.Api) in 12.6614ms
+2022-10-01 13:56:45.306 +02:00 [INF] Executed endpoint 'LetMePark.Api.Controllers.HomeController.Get (LetMePark.Api)'
+2022-10-01 13:56:45.308 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 200 - text/plain;+charset=utf-8 97.9127ms
+2022-10-01 13:57:36.030 +02:00 [INF] User profile is available. Using 'C:\Users\xpaweee\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-10-01 13:57:36.974 +02:00 [INF] Entity Framework Core 6.0.7 initialized 'LetMeParkDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-10-01 13:57:37.339 +02:00 [INF] Executed DbCommand (82ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2022-10-01 13:57:37.385 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2022-10-01 13:57:37.396 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2022-10-01 13:57:37.416 +02:00 [INF] No migrations were applied. The database is already up to date.
+2022-10-01 13:57:37.581 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT w."Id", w."Capacity", w."Name", w."Week"
+FROM "WeeklyParkingSpots" AS w
+2022-10-01 13:57:37.685 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2022-10-01 13:57:37.756 +02:00 [INF] Executing endpoint 'LetMePark.Api.Controllers.HomeController.Get (LetMePark.Api)'
+2022-10-01 13:57:37.762 +02:00 [INF] Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.String] Get() on controller LetMePark.Api.Controllers.HomeController (LetMePark.Api).
+2022-10-01 13:57:37.768 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2022-10-01 13:57:37.779 +02:00 [INF] Executed action LetMePark.Api.Controllers.HomeController.Get (LetMePark.Api) in 12.5482ms
+2022-10-01 13:57:37.779 +02:00 [INF] Executed endpoint 'LetMePark.Api.Controllers.HomeController.Get (LetMePark.Api)'
+2022-10-01 13:57:37.782 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 200 - text/plain;+charset=utf-8 99.8779ms
+2022-10-01 14:00:00.293 +02:00 [INF] User profile is available. Using 'C:\Users\xpaweee\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-10-01 14:00:01.242 +02:00 [INF] Entity Framework Core 6.0.7 initialized 'LetMeParkDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-10-01 14:00:02.352 +02:00 [INF] Executed DbCommand (722ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE DATABASE "LetMePark-test";
+2022-10-01 14:00:02.648 +02:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2022-10-01 14:00:02.714 +02:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2022-10-01 14:00:02.718 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2022-10-01 14:00:02.733 +02:00 [INF] Applying migration '20220912182111_Init'.
+2022-10-01 14:00:02.775 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "WeeklyParkingSpots" (
+    "Id" uuid NOT NULL,
+    "Week" timestamp with time zone NULL,
+    "Name" text NULL,
+    CONSTRAINT "PK_WeeklyParkingSpots" PRIMARY KEY ("Id")
+);
+2022-10-01 14:00:02.786 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Reservations" (
+    "Id" uuid NOT NULL,
+    "ParkingSpotId" uuid NULL,
+    "EmployeeName" text NULL,
+    "LicensePlate" text NULL,
+    "Date" timestamp with time zone NULL,
+    "WeeklyParkingSpotId" uuid NULL,
+    CONSTRAINT "PK_Reservations" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_Reservations_WeeklyParkingSpots_WeeklyParkingSpotId" FOREIGN KEY ("WeeklyParkingSpotId") REFERENCES "WeeklyParkingSpots" ("Id")
+);
+2022-10-01 14:00:02.788 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Reservations_WeeklyParkingSpotId" ON "Reservations" ("WeeklyParkingSpotId");
+2022-10-01 14:00:02.791 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20220912182111_Init', '6.0.7');
+2022-10-01 14:00:02.796 +02:00 [INF] Applying migration '20220918180816_Cleaning_Reservation'.
+2022-10-01 14:00:02.809 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Reservations" ADD "Type" text NOT NULL DEFAULT '';
+2022-10-01 14:00:02.810 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20220918180816_Cleaning_Reservation', '6.0.7');
+2022-10-01 14:00:02.810 +02:00 [INF] Applying migration '20220919161222_Introducing_Capacity'.
+2022-10-01 14:00:02.815 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "WeeklyParkingSpots" ADD "Capacity" integer NOT NULL DEFAULT 0;
+2022-10-01 14:00:02.815 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Reservations" ADD "Capacity" integer NOT NULL DEFAULT 0;
+2022-10-01 14:00:02.816 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20220919161222_Introducing_Capacity', '6.0.7');
+2022-10-01 14:00:02.816 +02:00 [INF] Applying migration '20220927182229_User'.
+2022-10-01 14:00:02.827 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Users" (
+    "Id" uuid NOT NULL,
+    "Email" character varying(100) NOT NULL,
+    "Username" character varying(30) NOT NULL,
+    "Password" character varying(200) NOT NULL,
+    "FullName" character varying(100) NOT NULL,
+    "Role" character varying(30) NOT NULL,
+    "CreatedAt" timestamp without time zone NOT NULL,
+    CONSTRAINT "PK_Users" PRIMARY KEY ("Id")
+);
+2022-10-01 14:00:02.829 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_Users_Email" ON "Users" ("Email");
+2022-10-01 14:00:02.831 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_Users_Username" ON "Users" ("Username");
+2022-10-01 14:00:02.831 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20220927182229_User', '6.0.7');
+2022-10-01 14:00:02.998 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT w."Id", w."Capacity", w."Name", w."Week"
+FROM "WeeklyParkingSpots" AS w
+2022-10-01 14:00:03.133 +02:00 [INF] Executed DbCommand (17ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTimeOffset), @p4='?' (DbType = Guid), @p5='?' (DbType = Int32), @p6='?', @p7='?' (DbType = DateTimeOffset), @p8='?' (DbType = Guid), @p9='?' (DbType = Int32), @p10='?', @p11='?' (DbType = DateTimeOffset), @p12='?' (DbType = Guid), @p13='?' (DbType = Int32), @p14='?', @p15='?' (DbType = DateTimeOffset), @p16='?' (DbType = Guid), @p17='?' (DbType = Int32), @p18='?', @p19='?' (DbType = DateTimeOffset)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "WeeklyParkingSpots" ("Id", "Capacity", "Name", "Week")
+VALUES (@p0, @p1, @p2, @p3);
+INSERT INTO "WeeklyParkingSpots" ("Id", "Capacity", "Name", "Week")
+VALUES (@p4, @p5, @p6, @p7);
+INSERT INTO "WeeklyParkingSpots" ("Id", "Capacity", "Name", "Week")
+VALUES (@p8, @p9, @p10, @p11);
+INSERT INTO "WeeklyParkingSpots" ("Id", "Capacity", "Name", "Week")
+VALUES (@p12, @p13, @p14, @p15);
+INSERT INTO "WeeklyParkingSpots" ("Id", "Capacity", "Name", "Week")
+VALUES (@p16, @p17, @p18, @p19);
+2022-10-01 14:00:03.197 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2022-10-01 14:00:03.267 +02:00 [INF] Executing endpoint 'LetMePark.Api.Controllers.HomeController.Get (LetMePark.Api)'
+2022-10-01 14:00:03.274 +02:00 [INF] Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.String] Get() on controller LetMePark.Api.Controllers.HomeController (LetMePark.Api).
+2022-10-01 14:00:03.280 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2022-10-01 14:00:03.291 +02:00 [INF] Executed action LetMePark.Api.Controllers.HomeController.Get (LetMePark.Api) in 12.3588ms
+2022-10-01 14:00:03.292 +02:00 [INF] Executed endpoint 'LetMePark.Api.Controllers.HomeController.Get (LetMePark.Api)'
+2022-10-01 14:00:03.294 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 200 - text/plain;+charset=utf-8 100.2093ms
+2022-10-01 14:07:38.307 +02:00 [INF] User profile is available. Using 'C:\Users\xpaweee\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-10-01 14:07:39.295 +02:00 [INF] Entity Framework Core 6.0.7 initialized 'LetMeParkDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-10-01 14:07:39.647 +02:00 [INF] Executed DbCommand (74ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2022-10-01 14:07:39.695 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2022-10-01 14:07:39.706 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2022-10-01 14:07:39.725 +02:00 [INF] No migrations were applied. The database is already up to date.
+2022-10-01 14:07:39.891 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT w."Id", w."Capacity", w."Name", w."Week"
+FROM "WeeklyParkingSpots" AS w
+2022-10-01 14:07:40.003 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2022-10-01 14:07:40.072 +02:00 [INF] Executing endpoint 'LetMePark.Api.Controllers.HomeController.Get (LetMePark.Api)'
+2022-10-01 14:07:40.079 +02:00 [INF] Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.String] Get() on controller LetMePark.Api.Controllers.HomeController (LetMePark.Api).
+2022-10-01 14:07:40.085 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2022-10-01 14:07:40.096 +02:00 [INF] Executed action LetMePark.Api.Controllers.HomeController.Get (LetMePark.Api) in 11.9154ms
+2022-10-01 14:07:40.097 +02:00 [INF] Executed endpoint 'LetMePark.Api.Controllers.HomeController.Get (LetMePark.Api)'
+2022-10-01 14:07:40.099 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 200 - text/plain;+charset=utf-8 99.0797ms

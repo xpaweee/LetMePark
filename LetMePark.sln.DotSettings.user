@@ -5,6 +5,7 @@
     &lt;TestId&gt;xUnit::20B85011-6D4B-4BF9-B4C2-B301FA775EE5::net6.0::LetMePark.Tests.Unit.Entities.WeeklyParkingSpotTests.given_invalid_date_add_reservation_should_fail&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::20B85011-6D4B-4BF9-B4C2-B301FA775EE5::net6.0::LetMePark.Tests.Unit.Entities.WeeklyParkingSpotTests.given_reservation_for_already_existing_date_add_reservation_should_fail&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::20B85011-6D4B-4BF9-B4C2-B301FA775EE5::net6.0::LetMePark.Tests.Unit.Entities.WeeklyParkingSpotTests.given_reservation_for_not_taken_date_add_reservation_should_succeed&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::14435509-4690-4245-A873-9076739AB755::net6.0::LetMePark.Tests.Integration.Controllers.HomeControllerTests.get_base_endpoint_should_return_200_ok_status_code_and_api_name&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	</wpf:ResourceDictionary>

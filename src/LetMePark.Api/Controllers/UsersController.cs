@@ -5,6 +5,7 @@ using LetMePark.Application.Queries;
 using LetMePark.Application.Security;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace LetMePark.Api.Controllers;
 
@@ -37,7 +38,13 @@ public class UsersController : ControllerBase
         return NoContent();
     }
 
-    [HttpGet]
+    [HttpGet("{userId:guid}")]
+    [Authorize(Policy = "is-admin")]
+    [SwaggerOperation("Get single by user ID if exists")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(StatusCodes.Status403Forbidden)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult<UserDto>> Get(Guid userId)
     {
         var user = await _getUserHandler.HandleAsync(new GetUser { UserId = userId });
@@ -50,19 +57,11 @@ public class UsersController : ControllerBase
     }
 
     [HttpGet]
+    [Authorize(Policy = "is-admin")]
     public async Task<ActionResult<ActionResult<UserDto>>> Get([FromQuery] GetUsers query)
         => Ok(await _getUsersHandler.HandleAsync(query));
    
 
-    [HttpPost("sign-in")]
-    public async Task<ActionResult<JwtDto>> Post(SignIn command)
-    {
-        await _signInHandler.HandleAsync(command);
-        var jwt = _tokenStorage.Get();
-        
-        return Ok(jwt);
-    }
-    
     [Authorize]
     [HttpGet("me")]
     public async Task<ActionResult<UserDto>> Get()
@@ -75,4 +74,15 @@ public class UsersController : ControllerBase
         
         return user;
     }
+    
+    [HttpPost("sign-in")]
+    public async Task<ActionResult<JwtDto>> Post(SignIn command)
+    {
+        await _signInHandler.HandleAsync(command);
+        var jwt = _tokenStorage.Get();
+        
+        return Ok(jwt);
+    }
+    
+  
 }
